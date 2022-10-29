@@ -8,7 +8,7 @@ let numberAcount;
 let option;
 const usd = 291.0, euro = 291.99;
 //Saludamos al usuario
-alert("Bienvenido a la mejor casa de cambio one-line");
+alert("Bienvenido Mercado Santi");
 //llamamos a la funcion menu
 menu();
 do {
