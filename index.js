@@ -3,7 +3,6 @@ let money;
 let validate;
 let card;
 let cardNumber;
-let altValidate;
 let numberAcount;
 let option;
 const usd = 291.0, euro = 291.99;
@@ -20,6 +19,7 @@ do {
         validate = false;
     }
 } while (validate);
+//llamamos a la funcion menu
 
 function menu() {
     //validamos que el usuario ingrese una opcion que este en el menu 
@@ -252,7 +252,7 @@ function saleEur() {
     do {
         money = parseFloat(prompt(" ingrese la cantidad de EUROS que desea vender " + euro + "AR$ = 1€UR "));
         //valida el monto a vender
-        validate=checker(money);
+        validate = checker(money);
         if (validate) {
             //realiza la venta
             conversion = money * usd;
@@ -312,3 +312,6 @@ function checkerImportantNumbers(cardNumber, accounterNumbers) {
     }
     return validate;
 }
+
+
+
